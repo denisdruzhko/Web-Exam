@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+*{
+    font-family: 'Inconsolata', monospace;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+
+    list-style:none;
+    text-decoration: none;
+
+    border: none;
+    outline: none;
+}
+.logo{
+    margin: 40px 80px;
+}
+
+.logo p{
+    font-family: 'Homemade Apple', cursive;
+}
+
+.menu-block{
+    max-width: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu li a{
+    color: black;
+    font-size: 18px;
+}
+
+.menu li a:hover{
+     text-decoration: underline;
+}
+
+.giftFinder a{
+    margin: 40px 80px;
+
+    border-radius: 5px;
+    border: 1px solid #F7941E;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #F7941E;
+
+    height: 50px;
+    width: 150px;
+}
+
+.giftFinder a:hover{
+    color: white;
+    background: #F7941E;
+    transition: 0.5s ease-in;
+}
+
+.first-middle{
+
+    width:100%;
+    height:700px;
+    display:flex;
+}
+
+.first-div, .second-imageDiv{
+    width:50%;
+    height:auto;
+}
+
+.first-div{
+    background: #F1F1F2;
+}
+
+.first-div h1{
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    width: 400px;
+    font-size: 56px;
+}
+
+.first-div p{
+    margin-left: 150px;
+    margin-bottom: 75px;
+    width: 420px;
+    font-size: 20px;
+}
+
+.findGift a{
+    margin-left: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #F7941E;
+    color: white;
+    text-transform: uppercase;
+    
+    height: 60px;
+    width: 200px;
+}
+
+.findGift a:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.second-imageDiv{    
+
+    background: url('../images/firstMiddleDiv.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.first-imageDiv, .second-div{
+    width:50%;
+    height:auto;
+}
+
+.second-div{
+    background: #F1F1F2;
+}
+
+.second-div h2{
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-bottom: 30px;
+    width: 400px;
+    font-size: 56px;
+}
+
+.second-div p{
+    margin-left: 150px;
+    margin-bottom: 75px;
+    width: 420px;
+    font-size: 20px;
+}
+.learnMoreBt a{
+    margin-left: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 5px;
+    border: 1px solid #F7941E;
+
+    color: #F7941E;
+
+    height: 50px;
+    width: 150px;
+}
+
+.learnMoreBt a:hover{
+    color: white;
+    background: #F7941E;
+    transition: 0.5s ease-in;
+}
+
+.first-imageDiv{    
+
+    background: url('../images/secondMiddleDiv.jpg') no-repeat center;
+    background-size: cover;
+}
