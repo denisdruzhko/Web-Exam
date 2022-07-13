@@ -11,18 +11,25 @@
     text-decoration: none;
 
     border: none;
-    outline: none;
+    outline: none;  
+
 }
+
+.full-page{
+    max-width: 1440px;
+}
+
 .logo{
     margin: 40px 80px;
 }
 
 .logo p{
     font-family: 'Homemade Apple', cursive;
+    font-size: 28px;
 }
 
 .menu-block{
-    max-width: 100%;
+
     margin: auto;
 
     display: flex;
@@ -33,15 +40,27 @@
 .menu li{
     display: inline-block;
     margin: 0 15px;
+    position: relative;
 }
 
 .menu li a{
     color: black;
-    font-size: 18px;
+    font-size: 28px;
 }
 
-.menu li a:hover{
-     text-decoration: underline;
+.menu li::after{
+    content: '';
+    background: #000;
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: -2px;
+    left: 0;
+    transition: 0.8s ease-in-out;
+}
+.menu li:hover::after{
+    width: 100%;
+    background: #F7941E;
 }
 
 .giftFinder a{
@@ -50,14 +69,16 @@
     border-radius: 5px;
     border: 1px solid #F7941E;
 
+    font-size: 28px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
     color: #F7941E;
 
-    height: 50px;
-    width: 150px;
+    height: 70px;
+    width: 200px;
 }
 
 .giftFinder a:hover{
@@ -69,7 +90,7 @@
 .first-middle{
 
     width:100%;
-    height:700px;
+    height:850px;
     display:flex;
 }
 
@@ -87,14 +108,14 @@
     margin-left: 150px;
     margin-bottom: 30px;
     width: 400px;
-    font-size: 56px;
+    font-size: 70px;
 }
 
 .first-div p{
     margin-left: 150px;
     margin-bottom: 75px;
     width: 420px;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 .findGift a{
@@ -104,12 +125,14 @@
     align-items: center;
     justify-content: center;
 
+    font-size: 28px;
+
     background: #F7941E;
     color: white;
     text-transform: uppercase;
     
-    height: 60px;
-    width: 200px;
+    height: 70px;
+    width: 220px;
 }
 
 .findGift a:hover{
@@ -136,14 +159,14 @@
     margin-left: 150px;
     margin-bottom: 30px;
     width: 400px;
-    font-size: 56px;
+    font-size: 70px;
 }
 
 .second-div p{
     margin-left: 150px;
     margin-bottom: 75px;
     width: 420px;
-    font-size: 20px;
+    font-size: 30px;
 }
 .learnMoreBt a{
     margin-left: 150px;
@@ -157,8 +180,10 @@
 
     color: #F7941E;
 
-    height: 50px;
-    width: 150px;
+    font-size: 28px;
+
+    height: 70px;
+    width: 200px;
 }
 
 .learnMoreBt a:hover{
@@ -171,4 +196,299 @@
 
     background: url('../images/secondMiddleDiv.jpg') no-repeat center;
     background-size: cover;
+}
+
+.reason-head{
+    margin-top: 100px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.reason-head h2{
+    font-size: 37px;
+    font-weight: normal;
+}
+
+.reason-head p{
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+
+.form-body{
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 135px;
+}
+
+
+.block-item{
+    margin: 20px;
+
+    background: #F1F1F2;
+
+    display: flex;
+
+    justify-content: left;
+    flex-direction: column;
+
+    width: 270px;
+    height: 420px;
+}
+
+.block-item a:hover{
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    transition: 0.5s ease-in;
+}
+
+
+.block-item img{
+    height: 250px;
+    max-width: 270px;
+}
+
+.item-name{
+    font-size: 25px;
+    margin-left: 25px;
+    margin-bottom: 100px;
+    
+    color:black;
+}
+
+.seeMore {
+    font-weight: bolder;
+    font-size: 18px;
+    
+margin-bottom: 25px;
+margin-left: 25px;
+
+    color:black;
+}
+
+.ready-div {
+    width: 100%;
+    height: 200px;
+    background-color: #F7941E;
+
+    display: flex;
+    align-items: center;
+}
+
+.ready-textDiv, .ready-buttonDiv{
+    width:50%;
+    height:auto;
+}
+
+.ready-textDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ready-textDiv h2{
+    font-size: 40px;
+}
+
+.ready-textDiv p{
+    font-size: 40px;
+}
+
+.ready-buttonDiv{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    margin-left: 50px;
+}
+
+.blackBt a{
+    border-radius: 5px;
+
+    font-size: 28px;
+
+    border: 1px solid black;
+
+    background: black;
+    color: white;
+
+    height: 50px;
+    width: 200px;
+
+    padding: 10px;
+    margin-right: 40px;
+}
+
+.blackBt a:hover{
+    color: black;
+    background: none;
+
+    transition: 1s ease-in-out;
+}
+
+.howWorksBt a{
+    border-radius: 5px;
+
+    font-size: 28px;
+
+    color: black;
+
+    border: 1px solid black;
+    
+    height: 50px;
+    width: 200px;
+
+    padding: 10px;
+}
+
+.howWorksBt a:hover{
+    background: black;
+    color: white;
+
+    transition: 1s ease-out;
+}
+
+.blog-div{
+    padding-left: 135px;
+    padding-right: 135px;
+}
+
+.add-div{
+    margin-top: 70px;
+    
+    width:100%;
+    height:370px;
+    display:flex;
+}
+
+.blog-image{
+    width:30%;
+    height:auto;
+
+    background: url('../images/img.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.addText-div{
+    width:70%;
+    height:auto;
+
+    background: black;
+    color: white;
+
+    padding-left: 80px;
+}
+
+.author{
+    margin-top: 60px;
+    margin-bottom: 30px;        
+    font-size: 20px;
+}
+
+.addText-div h2{
+    width: 490px;
+    font-size: 48px;
+    font-weight: lighter;
+
+    margin-bottom: 60px;
+}
+
+.addText-div a{
+    font-size: 20px;
+    color: white;
+}
+
+.extra-info{
+    padding: 40px 135px 80px;
+
+    width: 100%;   
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extraInfo-div{ 
+    width: 570px;
+    height: 240px;
+    display: flex;
+}
+
+.extraInfo-div h2{
+    margin: 50px 50px 15px 50px;
+    width: 475px;
+    color:black;
+}
+
+.extraInfo-div p{
+    width: 475px;
+    margin: 0 50px 15px 50px;
+    color:black;
+}   
+
+.extraInfo-div a:hover{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    transition: 0.5s ease-in;
+}
+
+.final-block{
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background: #FAFAFA;
+
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.final-block hr{
+    display:block;            
+    background: black;
+    width: 1200px;
+    height: 1px;  
+
+    margin-top: 50px;
+}
+
+.final-menu li{
+    display: inline-block;
+}
+
+.final-menu li a{
+    margin: 80px;
+    color: black;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+#logo-text{
+    margin-left: 140px;
+    margin-right: 140px;
+
+    font-family: 'Homemade Apple', cursive;
+    font-size: 18px;
+    color:#F7941E;
+}
+
+.image-contact{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image-contact img{
+    width: 40px;
+    height: 40px;
 }
