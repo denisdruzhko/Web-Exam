@@ -11,6 +11,11 @@
 
         align-items: center;
         justify-content: center;
+
+        
+    }
+    .extraInfo-div{
+        width: 100%;  
     }
     .extraInfo-div h2{
         text-align: center;
@@ -104,11 +109,4 @@
         width: 100%;
         justify-content: center;
     }
-}
-
-@media screen and (max-width: 768px){
-
-}
-    
-@media screen and (max-width: 640px){
 }
